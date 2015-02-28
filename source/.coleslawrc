@@ -1,7 +1,7 @@
 (:author "dexter"
  :deploy-dir "/Users/xylu/Project/other/zeldacl.github.com/output"
  :repo "/Users/xylu/Project/other/zeldacl.github.com/source"
- :domain "http://zeldacl.github.io"
+ :domain "http://zeldacl.github.io/blog"
  :feeds ("lisp")
  :plugins ((analytics :tracking-code "foo")
            (disqus :shortname "my-site-name")
