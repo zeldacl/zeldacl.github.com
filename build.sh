@@ -23,4 +23,8 @@ else
 fi
 
 mv output/blog .
+mv output/css blog
+mv output/img blog
+mv output/js blog
+mv output/static blog
 rm -rf output
