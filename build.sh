@@ -11,11 +11,11 @@ cp source/.coleslawrc ~/
 
 if [ $LISP = sbcl ]; then
   sbcl --eval "(ql:quickload 'coleslaw)" \
-  --eval "(coleslaw:main \".\")" \
+  --eval "(coleslaw:main \"`pwd`/source\")" \
   --eval "(uiop:quit)"
 elif [ $LISP = ccl ]; then
   ccl -e "(ql:quickload 'coleslaw)" \
-  -e "(coleslaw:main \".\")" \
+  -e "(coleslaw:main \"`pwd`/source\")" \
   -e "(uiop:quit)"
 else
   echo -e "$LISP is not a supported lisp dialect at this time. Exiting.\n"
